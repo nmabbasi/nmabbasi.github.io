@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+  .page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  header {
+    background-color: #0d47a1;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  header h2 {
+    margin: 5px 0 15px;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #bbdefb;
+  }
+  .contact-info {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255,255,255,0.5);
+  }
+  .section {
+    margin-top: 25px;
+  }
+  .section-title {
+    color: #0d47a1;
+    font-size: 1.3em;
+    border-bottom: 2px solid #1976d2;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .summary {
+    font-size: 1em;
+    text-align: justify;
+  }
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .skill-tag {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: 500;
+  }
+  .experience-item {
+    margin-bottom: 20px;
+    page-break-inside: avoid;
+  }
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+  }
+  .job-title {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #212121;
+  }
+  .company {
+    color: #1976d2;
+    font-weight: 500;
+  }
+  .date {
+    color: #757575;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  ul {
+    margin: 5px 0 0 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+  }
+  .note {
+    font-size: 0.85em;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+  }
+  .education-item {
+    margin-bottom: 10px;
+  }
+  .pub-item {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Nasir Mahmood Abbasi, PhD</h1>
+    <h2>Bioinformatician & Cancer Biology Researcher</h2>
+    <div class="contact-info">
+      <span>📍 Bordeaux, France</span>
+      <span>📧 nmabbasi@gmail.com</span>
+      <span>📱 0766037520</span>
+      <a href="https://nmabbasi.github.io/">🌐 nmabbasi.github.io</a>
+      <a href="https://www.linkedin.com/in/nmabbasi/">🔗 LinkedIn</a>
+      <a href="https://orcid.org/0009-0005-0083-1984">🆔 ORCID</a>
+    </div>
+    <div style="margin-top: 15px;">
+      <a href="assets/Nasir_Mahmood_Abbasi_CV.pdf" download class="skill-tag" style="text-decoration: none; font-size: 1em; padding: 8px 16px; display: inline-block;">📄 Download Full CV (PDF)</a>
+    </div>
+  </header>
+
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary">
+      Bioinformatician and Cancer Biology researcher with 9+ years of expertise in OMICS data analysis. Specializing in single-cell transcriptomics, genomics, and advanced computational pipelines. Proven ability to bridge complex computational models with wet-lab biological validations, notably identifying novel therapeutic targets in Sézary syndrome. Adept at driving innovation in both academic research and fast-paced industry environments.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Core Competencies & Technical Skills</div>
+    <div class="skills-container">
+      <span class="skill-tag">Single-Cell RNA-seq</span>
+      <span class="skill-tag">Seurat & Scanpy</span>
+      <span class="skill-tag">WGS / WES</span>
+      <span class="skill-tag">Transcriptomics</span>
+      <span class="skill-tag">R / Python / Perl</span>
+      <span class="skill-tag">HPC / Slurm</span>
+      <span class="skill-tag">Snakemake</span>
+      <span class="skill-tag">Docker / Singularity</span>
+      <span class="skill-tag">PacBio & Nanopore</span>
+      <span class="skill-tag">Data Visualization (ggplot2)</span>
+      <span class="skill-tag">Machine Learning</span>
+      <span class="skill-tag">BioNano Optical Mapping</span>
+    </div>
+    <div class="note">*For a comprehensive list of bioinformatics tools (e.g., Trajectory Analysis, Cell-Cell Communication), please visit my <a href="https://nmabbasi.github.io/">personal website</a>.*</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    
+    <div class="experience-item">
+      <div class="experience-header">
+        <div><span class="job-title">PhD Researcher & Bioinformatician</span> | <span class="company">Bordeaux University, France</span></div>
+        <div class="date">Sep 2023 – Sep 2026</div>
+      </div>
+      <ul>
+        <li>Designed and executed a full single-cell multi-omic analysis pipeline (QC, integration, trajectory, regulon, and ligand-receptor inference) to decode tumor heterogeneity in Sézary syndrome.</li>
+        <li>Analyzed Whole Exome Sequencing (WES) and BioNano optical mapping data for variant calling and structural variation detection.</li>
+        <li>Collaborated with wet-lab scientists to validate computational predictions via pharmacological inhibition, successfully confirming a novel therapeutic candidate.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <div><span class="job-title">Research Engineer</span> | <span class="company">IRBI Insect Biology Research Institute, France</span></div>
+        <div class="date">Jun 2022 – Aug 2023</div>
+      </div>
+      <ul>
+        <li>Managed HPC/Slurm infrastructure, ensuring scalable genomic data processing.</li>
+        <li>Delivered PacBio HiFi and Nanopore long-read analyses to elucidate genome structure and regulation in <i>Cotesia congregata</i> wasps.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <div><span class="job-title">Research Engineer</span> | <span class="company">INRAE, National Institute of Agriculture, France</span></div>
+        <div class="date">Mar 2019 – Apr 2021</div>
+      </div>
+      <ul>
+        <li>Benchmarked small RNA-seq analysis tools (siRNA/miRNA) for Brachypodium, Maize, and wheat to study environmental stress regulation.</li>
+        <li>Led transcriptomics, amplicon, and metatranscriptomics data analyses to evaluate the physiological effects of pharmacological drugs on animal models.</li>
+        <li>Administered institutional Galaxy servers for large-scale bioinformatics pipelines.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <div><span class="job-title">Research Assistant</span> | <span class="company">HKUST, Hong Kong</span></div>
+        <div class="date">Jan 2017 – Apr 2018</div>
+      </div>
+      <ul>
+        <li>Benchmarked WES/WGS variant-calling pipelines across cancer patient cohorts to optimize diagnostic accuracy.</li>
+        <li>Managed multi-terabyte genomic databases using Synology NAS systems.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <div><span class="job-title">Early Career Researcher Roles</span> | <span class="company">Sweden, Spain, Pakistan</span></div>
+        <div class="date">2009 – 2017</div>
+      </div>
+      <ul>
+        <li>Pioneered bioinformatics analysis of bacterial genomes at Karolinska Hospital (Sweden), discovering the novel species <i>Capnocytophaga stomatis</i>.</li>
+        <li>Analyzed marine prokaryotic genomes at Univ. Miguel Hernandez (Spain), differentiating <i>Bacteroides</i> strains.</li>
+        <li>Conducted MATLAB-based statistical analysis of avian genomics at the Evolutionary Biology Centre (Sweden).</li>
+      </ul>
+      <div class="note">*Full details of early roles (including teaching at Virtual University of Pakistan) are available on my <a href="https://www.linkedin.com/in/nmabbasi/">LinkedIn profile</a>.*</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="experience-header">
+        <div><span class="job-title">PhD in Cancer Biology</span> | <span class="company">Bordeaux University, France</span></div>
+        <div class="date">Defended Jun 2026</div>
+      </div>
+      <div style="font-size: 0.95em; padding-left: 20px;"><strong>Thesis:</strong> Deciphering Sézary syndrome heterogeneity using bioinformatics approaches, integrating WES, scRNA-seq, and BioNano optical mapping data.</div>
+    </div>
+    <div class="education-item">
+      <div class="experience-header">
+        <div><span class="job-title">Master of Science: Bioinformatics</span> | <span class="company">Sweden</span></div>
+        <div class="date">Aug 2010 – Oct 2012</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Selected Publications & Conferences</div>
+    <div class="pub-item"><strong>Abbasi N</strong>, et al. Deciphering Sézary syndrome tumoral heterogeneity through a bioinformatic approach. <em>Manuscript in preparation</em> (2026).</div>
+    <div class="pub-item">Zajitschek S, James E. Herbert-Read, <strong>Abbasi N</strong>, Immler. Paternal personality and social status influence offspring personality in offsprings. <em>BMC Evolutionary Biology</em> (2017).</div>
+    <div class="pub-item">Zangenah S, <strong>Abbasi N</strong>, et al. Whole Genome Sequencing Reveals Novel Species of genus Capnocytophaga isolated from dog and cat bite wounds in humans. <em>Scientific Reports</em> (2016).</div>
+    <div class="note">*For a full list of publications and conference presentations, please visit my <a href="https://orcid.org/0009-0005-0083-1984">ORCID</a>.*</div>
+  </div>
+</div>
+</body>
+</html>
