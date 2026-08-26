@@ -93,5 +93,66 @@ Error generating stack: `+l.message+`
 
     <div id="root"></div>
     <script defer src="https://manus-analytics.com/umami" data-website-id="86b8619e-52bf-4c91-aafb-b06f971e5ee7"></script>
+    <script>
+      /* Publication enhancement: add the CV-listed in-preparation paper and emphasise the portfolio owner in citations. */
+      (function () {
+        const owner = 'Abbasi N';
+        const newCitation = "Cherfan C, Deslande M, Prochazkova-Carlotti M, Abbasi N, Sharanek A, Pham-Ledard A, Poglio S, Gros A, Merlio J-P, Bresson-Bepoldin L, Beylot-Barry M, Chevret E. Oxidative Phosphorylation: A Potential Achilles' Heel of Sézary Cells.";
+
+        function setCitationText(paragraph, citation) {
+          const pieces = citation.split(owner);
+          const fragment = document.createDocumentFragment();
+          pieces.forEach(function (piece, index) {
+            fragment.appendChild(document.createTextNode(piece));
+            if (index < pieces.length - 1) {
+              const name = document.createElement('strong');
+              name.textContent = owner;
+              fragment.appendChild(name);
+            }
+          });
+          paragraph.replaceChildren(fragment);
+        }
+
+        function enhancePublications() {
+          const publications = Array.from(document.querySelectorAll('.publication-item'));
+          if (!publications.length) return false;
+
+          publications.forEach(function (publication) {
+            const citation = publication.querySelector('p');
+            if (citation && citation.textContent.includes(owner) && !publication.dataset.ownerEmphasised) {
+              setCitationText(citation, citation.textContent.trim());
+              publication.dataset.ownerEmphasised = 'true';
+            }
+          });
+
+          if (!document.querySelector('[data-publication="oxidative-phosphorylation-sezary"]')) {
+            const inPreparation = publications.find(function (publication) {
+              const status = publication.querySelector('span');
+              return status && status.textContent.trim() === 'In preparation';
+            });
+            if (inPreparation) {
+              const article = document.createElement('article');
+              article.className = 'publication-item';
+              article.dataset.publication = 'oxidative-phosphorylation-sezary';
+              const status = document.createElement('span');
+              status.textContent = 'In preparation';
+              const citation = document.createElement('p');
+              setCitationText(citation, newCitation);
+              article.append(status, citation);
+              inPreparation.insertAdjacentElement('afterend', article);
+            }
+          }
+          return true;
+        }
+
+        if (enhancePublications()) return;
+        const root = document.getElementById('root');
+        if (!root) return;
+        const observer = new MutationObserver(function () {
+          if (enhancePublications()) observer.disconnect();
+        });
+        observer.observe(root, { childList: true, subtree: true });
+      })();
+    </script>
   </body>
 </html>
