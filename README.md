@@ -14,7 +14,7 @@ It provides detailed information on:
 - **Education:** PhD in Bioinformatics (Université de Bordeaux / CNRS), MSc, and BSc backgrounds.
 - **Research Experience:** Detailed breakdown of my PhD research on Sézary Syndrome, including single-cell multi-omics integration (scRNA-seq, scATAC-seq, CITE-seq), as well as previous roles as a Bioinformatics Research Assistant.
 - **Technical Skills:** Command of computational languages (R, Python, Bash), pipeline orchestration (Nextflow, Snakemake), and advanced analytical frameworks (Seurat, Scanpy).
-- **Publications & Projects:** Links to peer-reviewed publications and flagship open-source repositories like [The Omics Hub](https://theomicshub.com) and the [OmicsFlow Pipelines](https://github.com/nmabbasi/OmicsFlow-scRNAseq).
+- **Publications & Projects:** Links to peer-reviewed publications and flagship open-source repositories like the [OmicsFlow Pipelines](https://github.com/nmabbasi/OmicsFlow-scRNAseq).
 
 ## 🛠️ Architecture
 
@@ -27,6 +27,5 @@ This is a static site natively hosted and deployed via **GitHub Pages**.
 
 - **Portfolio:** [nmabbasi.github.io](https://nmabbasi.github.io)
 - **LinkedIn:** [Nasir Mahmood Abbasi](https://www.linkedin.com/in/nmabbasi/)
-- **Educational Platform:** [The Omics Hub](https://theomicshub.com)
 
 *Feel free to explore the repository or reach out if you're interested in collaborations surrounding spatial transcriptomics or scalable bioinformatics pipelines!*
