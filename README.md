@@ -8,7 +8,7 @@ Source code for my personal academic portfolio and CV hosted at **[nmabbasi.gith
 
 ## Overview
 
-The site documents my research background and computational workflows as a Computational Biologist specializing in single-cell transcriptomics, tumor immunology, and workflow orchestration.
+The site documents my research background and computational workflows as a Computational Biologist specializing in single-cell transcriptomics, tumor immunology, and workflow orchestration. I am currently open to new opportunities across academic research and industry.
 
 It includes:
 - **Education**: PhD in Bioinformatics (Université de Bordeaux / CNRS), MSc, and BSc degrees.
