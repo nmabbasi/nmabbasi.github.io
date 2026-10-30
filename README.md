@@ -1,31 +1,31 @@
-# Academic Portfolio & Curriculum Vitae 🎓
+# Academic Portfolio & Curriculum Vitae
 
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg?style=flat)]()
 [![Built With](https://img.shields.io/badge/Built_With-Jekyll_&_HTML5-blue.svg?style=flat)]()
 [![Deployed On](https://img.shields.io/badge/Deployed_On-GitHub_Pages-black.svg?style=flat)](https://nmabbasi.github.io)
 
-This repository contains the source code for my professional academic portfolio and curriculum vitae, hosted at **[nmabbasi.github.io](https://nmabbasi.github.io)**.
+Source code for my personal academic portfolio and CV hosted at **[nmabbasi.github.io](https://nmabbasi.github.io)**.
 
-## 🌟 Overview
+## Overview
 
-The site serves as a comprehensive overview of my academic and professional journey as a Computational Biologist, specializing in single-cell transcriptomics and tumor microenvironment immunology. 
+The site documents my research background and computational workflows as a Computational Biologist specializing in single-cell transcriptomics, tumor immunology, and workflow orchestration.
 
-It provides detailed information on:
-- **Education:** PhD in Bioinformatics (Université de Bordeaux / CNRS), MSc, and BSc backgrounds.
-- **Research Experience:** Detailed breakdown of my PhD research on Sézary Syndrome, including single-cell multi-omics integration (scRNA-seq, scATAC-seq, CITE-seq), as well as previous roles as a Bioinformatics Research Assistant.
-- **Technical Skills:** Command of computational languages (R, Python, Bash), pipeline orchestration (Nextflow, Snakemake), and advanced analytical frameworks (Seurat, Scanpy).
-- **Publications & Projects:** Links to peer-reviewed publications and flagship open-source repositories like the [OmicsFlow Pipelines](https://github.com/nmabbasi/OmicsFlow-scRNAseq).
+It includes:
+- **Education**: PhD in Bioinformatics (Université de Bordeaux / CNRS), MSc, and BSc degrees.
+- **Research Experience**: PhD research on Sézary Syndrome, including single-cell multi-omics (scRNA-seq, scATAC-seq, CITE-seq), malignant T-cell states, and metabolic vulnerabilities.
+- **Technical Skills**: Languages (R, Python, Bash), workflow engines (Nextflow, Snakemake), and single-cell toolkits (Seurat, Scanpy).
+- **Publications & Work**: Links to publications and open-source pipelines including [OmicsFlow-BulkRNAseq](https://github.com/nmabbasi/OmicsFlow-BulkRNAseq), [Snakemake-PacBio-Assembly](https://github.com/nmabbasi/Snakemake-PacBio-Assembly), and the [HPC Guide](https://nmabbasi.github.io/HPC/).
 
-## 🛠️ Architecture
+## Architecture
 
-This is a static site natively hosted and deployed via **GitHub Pages**. 
-- It utilizes a clean, professional, academic-focused design template.
-- Styled heavily with custom CSS to ensure a premium, responsive, and readable experience across all devices.
-- Uses `_includes` and layout partials (via Jekyll) for scalable component management.
+Static site built with Jekyll and deployed through GitHub Pages:
+- Clean, accessible academic layout with zero external tracking scripts.
+- Responsive CSS custom properties for multi-device readability.
+- Modular Jekyll partials (`_includes` and `_layouts`) for structured maintenance.
 
-## 📬 Connect
+## Connect
 
-- **Portfolio:** [nmabbasi.github.io](https://nmabbasi.github.io)
-- **LinkedIn:** [Nasir Mahmood Abbasi](https://www.linkedin.com/in/nmabbasi/)
-
-*Feel free to explore the repository or reach out if you're interested in collaborations surrounding spatial transcriptomics or scalable bioinformatics pipelines!*
+- Portfolio: [nmabbasi.github.io](https://nmabbasi.github.io)
+- GitHub: [@nmabbasi](https://github.com/nmabbasi)
+- LinkedIn: [Nasir Mahmood Abbasi](https://www.linkedin.com/in/nmabbasi/)
+- HPC Guide: [nmabbasi.github.io/HPC](https://nmabbasi.github.io/HPC/)
